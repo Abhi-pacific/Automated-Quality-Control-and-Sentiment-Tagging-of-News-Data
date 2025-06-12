@@ -50,7 +50,7 @@ This project automates quality control, metadata extraction, and sentiment taggi
 ```bash
 pip install pandas openpyxl
 # Download and set up Ollama and the Mistral model
-ollama pull mistral
+ollama run mistral:latest
 ```
 
 ### Data Preparation
