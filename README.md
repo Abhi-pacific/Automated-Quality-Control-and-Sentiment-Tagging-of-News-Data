@@ -1,6 +1,6 @@
-# Automated Processing and Sentiment Tagging of News Data
+Automated Processing and Sentiment Tagging of News Data
 
-A Python-based tool for automated quality control, metadata extraction, and sentiment tagging of multilingual news data in Excel format. Utilizes Pandas, NumPy, Openpyxl, and Ollama (Mistral model) for advanced NLU and financial sentiment analysis.
+A Python-based tool for automated quality control, metadata extraction, and sentiment tagging of multilingual news data in Excel format. Utilizes Pandas, NumPy, Openpyxl, and Ollama (Mistral model) for advanced NLU and financial sentiment analysis, enhanced by prompt engineering techniques.
 
 ---
 
@@ -19,7 +19,7 @@ A Python-based tool for automated quality control, metadata extraction, and sent
 
 ## Overview
 
-This project automates quality control, metadata extraction, and sentiment tagging for large-scale, multilingual news and social media datasets provided in Excel format. It leverages Python (Pandas, NumPy, Openpyxl) for robust data processing and integrates the open-source Ollama platform (Mistral model) for advanced natural language understanding (NLU) and sentiment analysis. Data is manually downloaded and then processed with this tool, supporting financial and market news analysis.
+This project automates quality control, metadata extraction, and sentiment tagging for large-scale, multilingual news and social media datasets provided in Excel format. It leverages Python (Pandas, NumPy, Openpyxl) for robust data processing and integrates the open-source Ollama platform (Mistral model) for advanced natural language understanding (NLU) and sentiment analysis. Prompt engineering is used to optimize model instructions and improve the accuracy of sentiment and metadata extraction. Data is manually downloaded and then processed with this tool, supporting financial and market news analysis.
 
 ---
 
@@ -28,7 +28,7 @@ This project automates quality control, metadata extraction, and sentiment taggi
 - Automated preprocessing and analysis of Excel datasets (50+ columns)
 - Multilingual data handling (Hindi, Malayalam, Telugu, English, etc.)
 - Metadata extraction: headlines, sources, influencers, sentiment tags, document IDs, and more
-- Advanced NLU and sentiment tagging via Ollama (Mistral model)
+- Advanced NLU and sentiment tagging via Ollama (Mistral model), enhanced by prompt engineering
 - Designed for financial and market news
 
 ---
@@ -40,6 +40,7 @@ This project automates quality control, metadata extraction, and sentiment taggi
 - NumPy
 - Openpyxl
 - Ollama (Mistral model)
+- Prompt Engineering
 
 ---
 
@@ -50,6 +51,8 @@ This project automates quality control, metadata extraction, and sentiment taggi
 ```bash
 pip install pandas openpyxl
 # Download and set up Ollama and the Mistral model
+# Use Ollama website
+# For model in CMD('windows') or Terminal('MAC') paste this command
 ollama run mistral:latest
 ```
 
@@ -67,7 +70,7 @@ ollama run mistral:latest
    data = pd.read_excel('your_data_file.xlsx')
    ```
 2. **Process and analyze the data using the provided scripts or notebook.**
-3. **Use the Ollama API with the Mistral model for NLU and sentiment tagging tasks.**
+3. **Use the Ollama API with the Mistral model for NLU and sentiment tagging tasks, applying prompt engineering best practices to optimize results.**
 
 ---
 
@@ -109,5 +112,10 @@ ollama run mistral:latest
 ## License
 
 MIT License
+
+---
+
+**Note:**  
+This tool is intended for use after manual data collection. Data ingestion is not automated and requires manual download of the Excel file before processing.
 
 ---
