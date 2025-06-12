@@ -1,4 +1,4 @@
-Automated Processing and Sentiment Tagging of News Data
+# Automated Processing and Sentiment Tagging of News Data
 
 A Python-based tool for automated quality control, metadata extraction, and sentiment tagging of multilingual news data in Excel format. Utilizes Pandas, NumPy, Openpyxl, and Ollama (Mistral model) for advanced NLU and financial sentiment analysis, enhanced by prompt engineering techniques.
 
